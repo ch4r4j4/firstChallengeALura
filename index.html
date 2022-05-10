@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de textos</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+          <img class="logo" src="./img/Logo.svg" alt="grupo-alura" />
+      </header>
+      <main>
+        <section class="principal">
+          <textarea id="texto1" type="text" class="input-text" cols="30" rows="7" placeholder="Ingrese el texto aqui"></textarea>
+          <div class="funciones">
+            <div>
+            <img src="./img/Vector.png" alt="alerta">
+            <h2>Solo letras mayusculas y minusculas</h2>
+          </div>
+            <button class="boton-funciones" id="encriptar" type="button" onclick="btnEncriptar()">Encripar</button>
+            <button class="boton-funciones" id="desencriptar" type="button" onclick="btnDesencriptar()">Desencriptar</button>
+          </div>
+        </section>
+
+        <section class="second">
+            <textarea id="texto2" type="text" class="output-text" cols="17" rows="2">
+            </textarea>
+            <img class="fondo" id="munieco" src="./img/munieco.svg" alt="munieco">
+            <h3 class="fondo" id="msg-inicio">Ningún mensaje fue encontrado</h3>
+            <p class="fondo" id="parrafo-anuncio">Ingresa el texto que desees encriptar o desencriptar</p>
+            <button class="boton-funciones" id="copiar" type="button" onclick="copiar()">Copiar</button>
+        </section>
+
+      </main>
+      <footer>
+
+      </footer>
+    </div>
+  </body>
+  <script src="./js/encriptar.js"></script>
+</html>
